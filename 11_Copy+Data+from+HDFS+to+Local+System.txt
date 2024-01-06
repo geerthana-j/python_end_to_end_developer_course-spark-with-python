@@ -1,0 +1,19 @@
+### Command - copyToLocal or get
+hadoop fs -get practice/retail_db/orders .
+
+### Error if the destination path already exists. To overwrite use –f flag.
+hadoop fs -get practice/retail_db/orders .
+hadoop fs -get –f practice/retail_db/orders .
+
+### -p flag to preserves access and  modification times, ownership and the mode.
+hadoop fs -get -p practice/retail_db/orders .
+
+### To Only copy the files with out folder use a pattern.
+hadoop fs -get practice/retail_db/orders/* .
+
+### 
+When copying multiple files, the destination must be a directory.
+mkdir copyHere
+hadoop fs -get practice/retail_db/orders/* practice/sample.txt copyHere
+
+ 

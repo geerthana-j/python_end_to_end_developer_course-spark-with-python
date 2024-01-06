@@ -1,0 +1,6 @@
+### Chmod
+#Octal Format
+hadoop fs -chmod 755 practice/retail_db/orders/part-00000
+
+#Symbolic Format
+hadoop fs -chmod g+w practice/retail_db/orders/part-00000

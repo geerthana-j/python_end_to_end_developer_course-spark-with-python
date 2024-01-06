@@ -1,0 +1,18 @@
+###fsck Command Help
+hadoop fsck -help
+
+### Print a High Level Report.
+hadoop fsck practice/retail_db
+
+### -files -->Print a detailed file level report.
+hadoop fsck practice/retail_db -files
+
+### -files -blocks --> Print a detailed file and block report.
+hadoop fsck practice/retail_db -files -blocks
+
+### -files -blocks -locations --> Print out locations for every block
+hadoop fsck practice/retail_db -files -blocks –locations
+
+### -files -blocks -racks --> Print out Rack level Informatin
+
+

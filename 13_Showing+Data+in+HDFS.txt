@@ -1,0 +1,16 @@
+### head
+hadoop fs -head practice/retail_db/orders/part-00000
+
+### tail
+hadoop fs -tail practice/retail_db/orders/part-00000
+
+### cat
+hadoop fs -cat practice/retail_db/orders/part-00000
+
+### HDFS cat Command with Unix head Command
+hadoop fs -cat practice/retail_db/orders/part-00000 | head -10
+hadoop fs -cat practice/retail_db/orders/part-00000 | head -5
+
+### HDFS cat Command with Unix tail Command
+hadoop fs -cat practice/retail_db/orders/part-00000 | tail -10
+hadoop fs -cat practice/retail_db/orders/part-00000 | tail -5

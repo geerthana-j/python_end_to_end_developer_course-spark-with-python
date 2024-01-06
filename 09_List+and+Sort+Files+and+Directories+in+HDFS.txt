@@ -1,0 +1,20 @@
+Command – ls
+hadoop fs -ls practice/retail_db
+
+### Using Pattern
+hadoop fs -ls practice/retail_db/ord*
+
+### -R : Recursively list the contents of directories.
+hadoop fs -ls -R practice/retail_db
+
+### -C : Display the paths of files and directories only.
+hadoop fs -ls -C practice/retail_db
+
+### –r : Reverse the order of the sort.
+hadoop fs -ls -r practice/retail_db
+
+### –S : Sort files by size.
+hadoop fs -ls -S practice/retail_db
+
+### –t : Sort files by modification time (most recent first).
+hadoop fs -ls -t practice/retail_db
